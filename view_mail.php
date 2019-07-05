@@ -36,7 +36,7 @@
        $request_date = $_GET['request_date'];
        $request_status = $_GET['request_status'];
 
-       if(strcmp($request_date,"pending") == 0){
+       if(strcmp($request_date,"pending") != 0){
 
            echo "<h4> FROM : Supervisor </h4>";
            echo "<p> Dear employee, your supervisor has $request_status your application <br>";
